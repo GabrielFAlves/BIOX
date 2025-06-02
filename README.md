@@ -6,6 +6,8 @@ Uma API REST moderna para gerenciamento de receitas culinárias, desenvolvida co
 [![API Docs](https://img.shields.io/badge/API-Swagger-85EA2D?logo=swagger)](https://recipe-catalog-qta4atetz-gabriels-projects-c73e3950.vercel.app/api/docs)
 [![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)](https://nestjs.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)](https://supabase.com/)
 
 ## 🌟 Funcionalidades
 
@@ -14,6 +16,8 @@ Uma API REST moderna para gerenciamento de receitas culinárias, desenvolvida co
 - ✅ **Clean Architecture** com separação de responsabilidades
 - ✅ **Tratamento de erros** padronizado
 - ✅ **Deploy automático** no Vercel
+- ✅ **Banco de dados** PostgreSQL gerenciado pelo Supabase
+- ✅ **ORM moderno** com Prisma para type-safety
 
 ## 🚀 Links Importantes
 
@@ -27,10 +31,32 @@ Uma API REST moderna para gerenciamento de receitas culinárias, desenvolvida co
 
 - **[NestJS](https://nestjs.com/)** - Framework Node.js para aplicações escaláveis
 - **[TypeScript](https://www.typescriptlang.org/)** - Superset tipado do JavaScript
+- **[Prisma](https://www.prisma.io/)** - ORM moderno com type-safety completo
+- **[Supabase](https://supabase.com/)** - Backend-as-a-Service com PostgreSQL
 - **[Swagger/OpenAPI](https://swagger.io/)** - Documentação automática da API
 - **[Class Validator](https://github.com/typestack/class-validator)** - Validação baseada em decorators
 - **[Class Transformer](https://github.com/typestack/class-transformer)** - Transformação de objetos
 - **[Vercel](https://vercel.com/)** - Plataforma de deploy
+
+## 🗄️ Banco de Dados
+
+### PostgreSQL + Supabase
+A aplicação utiliza **PostgreSQL** como banco de dados, hospedado no **Supabase**, que oferece:
+
+- 🔒 **Autenticação** integrada
+- 📊 **Dashboard** para gerenciamento
+- 🚀 **Performance** otimizada
+- 🔄 **Backup** automático
+- 🌐 **Edge Functions** disponíveis
+
+### Prisma ORM
+O **Prisma** é utilizado como ORM, proporcionando:
+
+- 🎯 **Type Safety** completo
+- 📝 **Schema declarativo**
+- 🔄 **Migrations** automáticas
+- 🔍 **Query Builder** intuitivo
+- 📊 **Prisma Studio** para visualização
 
 ## 📋 Endpoints da API
 
@@ -71,38 +97,6 @@ curl -X POST https://recipe-catalog-iwi99mcuu-gabriels-projects-c73e3950.vercel.
 curl -X GET https://recipe-catalog-iwi99mcuu-gabriels-projects-c73e3950.vercel.app/recipes/{id}
 ```
 
-## 📝 Estrutura de Dados
-
-### Recipe (Receita)
-```typescript
-{
-  id: string;           // UUID único
-  title: string;        // Título da receita
-  description: string;  // Descrição detalhada
-  ingredients: string[]; // Lista de ingredientes
-  createdAt: Date;      // Data de criação
-  updatedAt: Date;      // Data da última atualização
-}
-```
-
-### Exemplo de Resposta
-```json
-{
-  "id": "123e4567-e89b-12d3-a456-426614174000",
-  "title": "Bolo de Chocolate",
-  "description": "Um delicioso bolo de chocolate para sobremesa",
-  "ingredients": [
-    "2 xícaras de farinha de trigo",
-    "1 xícara de açúcar",
-    "1/2 xícara de chocolate em pó",
-    "3 ovos",
-    "1 xícara de leite"
-  ],
-  "createdAt": "2025-06-02T10:30:00.000Z",
-  "updatedAt": "2025-06-02T10:30:00.000Z"
-}
-```
-
 ## 🔒 Tratamento de Erros
 
 A API retorna erros padronizados:
@@ -137,6 +131,8 @@ Desenvolvido com ❤️ por **Gabriel**
 ### 🔗 Links Úteis
 
 - [NestJS Documentation](https://docs.nestjs.com/)
+- [Prisma Documentation](https://www.prisma.io/docs/)
+- [Supabase Documentation](https://supabase.com/docs)
 - [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [Swagger/OpenAPI](https://swagger.io/specification/)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
